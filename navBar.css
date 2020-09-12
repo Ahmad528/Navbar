@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('/navBarBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+nav{
+    background: rgba(68, 63, 63, 0.685);
+    word-spacing: 15px;
+    padding: 17px 15px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    width: 150px;
+    height: 40px;
+}
+ .menu{
+    position: relative;
+    right: 30px;
+}
+ .btn{
+    background: white;
+    border: none;
+    border-radius: 5px;
+    display: inline;
+}
+#link:hover{
+    color: white;
+    background: rgb(216, 143, 92);
+    border-radius: 5px;
+}
+#link{
+    font-size: 20px;
+    color:white;
+    background: grey;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.bars{
+    height: 35px;
+    border-radius: 5px;
+}
+.bars:active{
+    background: rgb(36, 34, 34);
+}
+.bar1{
+    width: 25px;
+    background-color: chocolate;
+    height: 3px;
+    margin:6px;
+    transition: all 1s ease;
+}
+.bar2{
+    width: 25px;
+    background-color: chocolate;
+    height: 3px;
+    margin: 6px;
+    transition: all 1s ease;
+}
+.bar3{
+    width: 25px;
+    background-color: chocolate;
+    height: 3px;
+    margin: 6px;
+    transition: all 1s ease;
+}
+.bar{
+    margin: 10px;
+    transition: all 1s ease;
+}
+.bars1{
+    width: 25px;
+    background-color: chocolate;
+    height: 3px;
+    transform: rotate(45deg);
+    position: relative;
+    margin-top: 8px;
+    transition: all 1s ease;
+}
+.bars2{
+    display: none;
+}
+.bars3{
+    width: 25px;
+    background-color: chocolate;
+    height: 3px;
+    margin-top: -3px;
+    transform: rotate(-45deg);
+    transition: all 1s ease;
+}
+
+@media only screen and (max-width: 800px)
+{
+    .menu{
+        position: fixed;
+    width: 170px;
+    background: rgb(22, 19, 19);
+    padding: 10px;
+    height: 100vh;
+    margin-top: 60px;
+    left: 0;
+    display: block;
+    opacity: 0.7;
+    left: -190px;
+    transition: all 0.5s;
+    }
+    .btn{
+        margin-bottom: 25px;
+        background: none;
+        color: white;
+        border: none;
+        width: 130px;
+        display: block;
+        border-bottom: 0.1px solid grey;
+    }
+    .menus{
+        left: 0px;
+    } 
+} 
+@media only screen and (min-width: 800px)
+{
+    .bars{
+        display: none;
+    }
+    .bar{
+        display: none;
+    }  
+}  

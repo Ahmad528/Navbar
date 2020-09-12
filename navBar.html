@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVBAR</title>
+
+    <!--jquery section -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(this)
+        $("#bars").click(function(){
+            $("#menu").toggleClass("menus",800);
+            // $("#btn").toggleClass('btn');
+            $("#bars").toggleClass("bar bars",1000)
+            $("#bar1").toggleClass("bars1 bar1",1000);
+            $("#bar2").toggleClass("bars2 bar2",1000)
+            $("#bar3").toggleClass("bars3 bar3",1000);
+        });
+    });
+    </script>
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="navBar.css">
+</head><body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <div class=" menu" id="menu">
+            <button type="button" id="btn" class="btn"><a href="#" id="link">HOME</a></button>
+            <button type="button" id="btn" class="btn"><a href="#" id="link">ABOUT</a></button>
+            <button type="button" id="btn" class="btn"><a href="#" id="link">PRODUCTS</a></button>
+            <button type="button" id="btn" class="btn"><a href="#" id="link">SERVICES</a></button>
+            <button type="button" id="btn" class="btn"><a href="#" id="link">CONTACTS</a></button>
+        </div>
+        <div id="bars" class="bars">
+            <div id="bar1" class="bar1"></div>
+            <div id="bar2" class="bar2"></div>
+            <div id="bar3" class="bar3"></div>
+        </div>
+    </nav>
+</body>
+</html>
